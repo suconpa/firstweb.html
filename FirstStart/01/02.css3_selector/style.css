@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.over_selector h2 {
+  background-color: #000;
+  margin: 5px;
+  color: #fff;
+}
+
+h2::before {
+  content: "맛있는";
+  padding-right: 5px;
+  background-color: red;
+  font-size: 0.5em;
+}
+
+h2::after {
+  content: "김밥";
+}
+
+.letter_line p::first-letter {
+  color: red;
+}
+
+.letter_line p::first-line {
+  color: blue;
+}
+
+.drag_selector h1::selection {
+  background-color: black;
+  color: red;
+}
+
+/* not 선택자 */
+.not_selector dd,
+.not_selector dt {
+  border: 1px solid gray;
+  margin-right: 5px;
+  padding: 15px;
+}
+
+.not_selector dd {
+  margin-bottom: 20px;
+  background-color: gray;
+}
+
+.not_selector dd:not(.first) {
+  display: none;
+}
+
+.not_selector dt:not(.first02) {
+  margin-bottom: 10px;
+}
